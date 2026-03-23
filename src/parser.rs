@@ -9,7 +9,6 @@ pub fn extract_access_date(html: &str) -> Option<Vec<String>> {
         .select(&selector)
         .map(|x| x.text().collect::<String>())
         .collect::<Vec<_>>();
-
     Some(dates)
 }
 
