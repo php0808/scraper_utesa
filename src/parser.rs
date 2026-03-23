@@ -1,5 +1,7 @@
 use scraper::{Html, Selector};
 
+
+// extract sessions
 pub fn extract_access_date(html: &str) -> Option<Vec<String>> {
     let doc = Html::parse_document(html);
     let selector = Selector::parse("td.cell.c0").ok()?;
@@ -32,3 +34,4 @@ pub fn extract_ip(html: &str) -> Option<Vec<String>> {
 
     Some(ips)
 }
+

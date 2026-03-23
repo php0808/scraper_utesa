@@ -2,6 +2,8 @@ mod entities;
 mod formatter;
 mod parser;
 mod scrapper;
+mod handler;
+
 
 use crate::entities::Response;
 use crate::entities::Session;
